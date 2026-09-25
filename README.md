@@ -14,10 +14,9 @@
 
 ## النشر على GitHub Pages
 
-1. ادمج الفرع في `main`.
-2. في المستودع افتح **Settings → Pages**.
-3. تحت **Source** اختر `Deploy from a branch`، ثم الفرع `main` والمجلد `/ (root)`، واضغط **Save**.
-4. سيظهر الموقع على: `https://khaledmsabeh1-cloud.github.io/office-website/`
+1. في المستودع افتح **Settings → Pages**.
+2. تحت **Source** اختر `Deploy from a branch`، ثم الفرع `claude/nice-shannon-qr5e2z` والمجلد `/ (root)`، واضغط **Save**.
+3. سيظهر الموقع على: `https://khaledmsabeh1-cloud.github.io/office-website/`
 
 > GitHub Pages يعمل مجاناً مع المستودعات العامة فقط، أما المستودع الخاص فيحتاج اشتراك GitHub Pro.
 
