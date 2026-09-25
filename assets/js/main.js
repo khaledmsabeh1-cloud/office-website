@@ -11,5 +11,7 @@
       toggle.setAttribute('aria-expanded', 'false');
     }
   });
-  document.getElementById('year').textContent = new Date().getFullYear();
+  var y = new Date().getFullYear();
+  document.getElementById('year').textContent = y;
+  document.getElementById('office-years').textContent = y - 2010;
 })();
