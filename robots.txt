@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://khaledmsabeh1-cloud.github.io/office-website/sitemap.xml
