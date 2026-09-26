@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://khaledmsabeh1-cloud.github.io/office-website/sitemap.xml
+Sitemap: https://ajyal-consulting.com/sitemap.xml
