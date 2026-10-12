@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+N:;مكتب أجيال الاستشاري للهندسة والإعمار;;;
+FN:مكتب أجيال الاستشاري للهندسة والإعمار
+ORG:Ajyal Consulting for Engineering & Construction
+TITLE:مكتب استشاري هندسي - درجة أولى
+TEL;TYPE=CELL,VOICE:+970599412256
+TEL;TYPE=CELL,VOICE:+970567412256
+TEL;TYPE=CELL,VOICE,PREF:+972595055045
+EMAIL;TYPE=WORK:info@ajyal-consulting.com
+URL:https://ajyal-consulting.com
+ADR;TYPE=WORK:;;حي الدرج، شارع النفق;غزة;;;Palestine
+NOTE:واتساب: 00972595055045 (م. صلاح أبو حصيرة، نائب المدير العام، المفوَّض بالاتصال والتواصل). تصميم · إشراف هندسي · إدارة مشاريع · وثائق عطاءات · تقييم أضرار. ساعات العمل: السبت - الخميس 9:00 - 15:00
+END:VCARD
