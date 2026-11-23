@@ -24,21 +24,26 @@
   Array.prototype.forEach.call(btns, function (b) {
     b.addEventListener('click', function () {
       Array.prototype.forEach.call(btns, function (x) { x.classList.toggle('is-on', x === b); });
-      works.forEach(function (w) { w.hidden = b.dataset.f !== 'all' && w.dataset.cat !== b.dataset.f; });
+      works.forEach(function (w) { w.hidden = b.dataset.f !== 'all' && w.dataset.cat.split(' ').indexOf(b.dataset.f) < 0; });
     });
   });
   var lb = document.getElementById('lightbox');
   if (!lb || typeof lb.showModal !== 'function') return;
   var img = lb.querySelector('img'), cap = lb.querySelector('.lb-cap'), cur = 0;
-  function visible() { return works.filter(function (w) { return !w.hidden; }); }
+  function slides() {
+    var out = [];
+    works.forEach(function (w) { if (!w.hidden) out.push.apply(out, w.querySelectorAll('a')); });
+    return out;
+  }
   function show(i) {
-    var v = visible(); cur = (i + v.length) % v.length;
-    var a = v[cur].querySelector('a');
+    var v = slides(); cur = (i + v.length) % v.length;
+    var a = v[cur];
     img.src = a.getAttribute('href'); img.alt = a.dataset.title; cap.textContent = a.dataset.title;
   }
   works.forEach(function (w) {
-    w.querySelector('a').addEventListener('click', function (e) {
-      e.preventDefault(); show(visible().indexOf(w)); lb.showModal();
+    var a = w.querySelector('a');
+    a.addEventListener('click', function (e) {
+      e.preventDefault(); show(slides().indexOf(a)); lb.showModal();
     });
   });
   lb.querySelector('.lb-close').addEventListener('click', function () { lb.close(); });
